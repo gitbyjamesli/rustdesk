@@ -8,7 +8,8 @@ done
 for size in 16 32 64 48 128 256; do
     #inkscape -z -o $size.png -w $size -h $size icon.svg >/dev/null 2>/dev/null
     #convert chatgpt-3.png -resize ${size}x${size} app_icon_$size.png
-    convert chatgpt-3.png -resize ${size}x${size} ${size}x${size}.png
+    #convert chatgpt-3.png -resize ${size}x${size} ${size}x${size}.png
+    echo "2"
 done
 
 # from ImageMagick
