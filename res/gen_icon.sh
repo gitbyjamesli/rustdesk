@@ -5,6 +5,12 @@ for size in 16 32 64 48 128 256 512 1024; do
 echo "1"
 done
 
+for size in 32; do
+    #inkscape -z -o ${size}x${size}.png -w $size -h $size tray-icon2.svg >/dev/null 2>/dev/null
+    #inkscape -w 32 -h 32 32x32.png -o tray-ico2.svg
+echo "svg"
+done
+
 for size in 16 32 64 48 128 256; do
     #inkscape -z -o $size.png -w $size -h $size icon.svg >/dev/null 2>/dev/null
     #convert chatgpt-3.png -resize ${size}x${size} app_icon_$size.png
