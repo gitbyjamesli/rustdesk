@@ -62,7 +62,7 @@ lazy_static::lazy_static! {
     pub static ref EXE_RENDEZVOUS_SERVER: RwLock<String> = Default::default();
     
     //pub static ref APP_NAME: RwLock<String> = RwLock::new("RustDesk".to_owned());
-    pub static ref APP_NAME: RwLock<String> = RwLock::new("XDesk_demoli".to_owned());
+    pub static ref APP_NAME: RwLock<String> = RwLock::new("xdesk".to_owned());
     
     static ref KEY_PAIR: Mutex<Option<KeyPair>> = Default::default();
     static ref USER_DEFAULT_CONFIG: RwLock<(UserDefaultConfig, Instant)> = RwLock::new((UserDefaultConfig::load(), Instant::now()));
@@ -105,8 +105,10 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
-pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+//pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
+//pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["xdeskdev.com"];
+pub const RS_PUB_KEY: &str = "AqsB5aLA97h56WyfTizM3Gbf+VJHhrutUyVnz2LCFJU=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
