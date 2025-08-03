@@ -650,6 +650,7 @@ impl Config {
             if let Some(config_path) = get_executable_path() {
                 let mut path =config_path;
                 path.push(p);
+                log::info!("get config_path {:?}", path);
                 return path;
             }
             
